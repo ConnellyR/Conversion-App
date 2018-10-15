@@ -22,12 +22,6 @@
       </div>
     </nav>
     
-    <form action='/response'>
-      What is your favorite color?<br>
-      <input type="text" name="color">
-      <br><br>
-      <input type="submit">
-    </form>
-
+    {%block content %}{%endblock%} 
   </body>
 </html>
