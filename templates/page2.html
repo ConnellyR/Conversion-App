@@ -1,3 +1,17 @@
 {%extends "layout.html"%}
 {%set active_page="page2"%}
 
+   {% block title%}page2{%endblock%}
+
+  {% block content%}
+    <form action='/response'>
+      
+      What is your favorite ie?<br>
+      <input type="text" name="color">
+      <br><br>
+      <input type="submit">
+    </form>
+  {% endblock%}
+
+
+
