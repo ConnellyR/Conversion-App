@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    color = request.args['color'] # the request object stores info about request to server. 
+    miles = request.args['miles'] # the request object stores info about request to server. 
     #args is a MultiDict ( like adictionary but it can have many values for same key)
     #the info in args is visible in url for page being requested ex: /response?color=orange
     if color == 'pink': 
