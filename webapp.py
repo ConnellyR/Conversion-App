@@ -8,19 +8,13 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    miles = request.args['miles'] # the request object stores info about request to server. 
-    #args is a MultiDict ( like adictionary but it can have many values for same key)
-    #the info in args is visible in url for page being requested ex: /response?color=orange
-    if color == 'pink': 
-        reply = "that is my favorite color,too"
-    else:
-        reply = "my favorite color is pink"
+    miles = float(request.args['miles'])
+   
     return render_template('response.html', response =reply)
-    
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
     
     
     
-mph = float(request.args['mph'])
+
