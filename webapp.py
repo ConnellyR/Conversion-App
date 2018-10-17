@@ -15,13 +15,13 @@ def render_response():
 
 @app.route("/page2")
 def render_response():
-   # miles = float(request.args['miles'])
+    mass = float(request.args['mass'])
    
     return render_template('page2.html')
 
 @app.route("/page3")
 def render_response():
-   # miles = float(request.args['miles'])
+    pe = float(request.args['pe'])
    
     return render_template('page3.html')
     
