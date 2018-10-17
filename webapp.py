@@ -8,7 +8,7 @@ def render_page1():
 @app.route("/response1")
 def render_response1():
     miles = float(request.args['miles'])
-    inchs=miles * 63360
+    inches=miles * 63360
     response= inches + "in. This is how many inches are in your number of miles"
     return render_template('response.html', response =response)
 
