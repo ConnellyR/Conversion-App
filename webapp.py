@@ -18,6 +18,12 @@ def render_response():
    # miles = float(request.args['miles'])
    
     return render_template('response.html', response =reply)
+
+@app.route("/page3")
+def render_response():
+   # miles = float(request.args['miles'])
+   
+    return render_template('response.html', response =reply)
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
