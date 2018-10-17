@@ -17,13 +17,13 @@ def render_response():
 def render_response():
    # miles = float(request.args['miles'])
    
-    return render_template('response.html', response =reply)
+    return render_template('page2.html')
 
 @app.route("/page3")
 def render_response():
    # miles = float(request.args['miles'])
    
-    return render_template('response.html', response =reply)
+    return render_template('page3.html')
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
