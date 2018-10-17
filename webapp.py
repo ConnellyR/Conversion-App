@@ -17,7 +17,7 @@ def render_page2():
 @app.route("/response2")
 def render_response2():
     mass = float(request.args['mass'])
-    response=mass * -9.8
+    response=mass * 9.8
     return render_template('response.html', response =response)
 
 @app.route("/page3")
@@ -27,7 +27,6 @@ def render_page3():
 def render_response3():
     pe = float(request.args['pe'])
     response=pe*441
-    return render_template('page3.html')
     return render_template('response.html', response =response)
 
     
