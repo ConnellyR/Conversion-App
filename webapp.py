@@ -8,7 +8,8 @@ def render_page1():
 @app.route("/response1")
 def render_response1():
     miles = float(request.args['miles'])
-    response=miles * 63360
+    inchs=miles * 63360
+    response= inches + "in. This is how many inches are in your number of miles"
     return render_template('response.html', response =response)
 
 @app.route("/page2")
@@ -17,7 +18,8 @@ def render_page2():
 @app.route("/response2")
 def render_response2():
     mass = float(request.args['mass'])
-    response=mass * 9.8
+    force=mass * 9.8
+    response=force +"N. This is how much force your mass would have falling"
     return render_template('response.html', response =response)
 
 @app.route("/page3")
@@ -25,8 +27,9 @@ def render_page3():
     return render_template('page3.html')
 @app.route("/response3")
 def render_response3():
-    pe = float(request.args['pe'])
-    response=pe*441
+    height = float(request.args['pe'])
+    pe=height*441
+    response=pe + " J. This is how much PE the mass has at your height"
     return render_template('response.html', response =response)
 
     
