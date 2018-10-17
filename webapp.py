@@ -9,20 +9,20 @@ def render_main():
 @app.route("/response")
 def render_response():
     miles = float(request.args['miles'])
-  #  response==miles * 63360
+    #  response==miles * 63360
     return render_template('response.html', response =reply)
 
 
 @app.route("/page2")
 def render_response():
     mass = float(request.args['mass'])
-  # response==mass * -9.8
+    # response==mass * -9.8
     return render_template('page2.html')
 
 @app.route("/page3")
 def render_response():
     pe = float(request.args['pe'])
-  # response==pe*441
+    # response==pe*441
     return render_template('page3.html')
     
 if __name__=="__main__":
