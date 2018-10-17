@@ -6,7 +6,7 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('page1.html')
 
-@app.route("/response")
+@app.route("/page1")
 def render_response():
     miles = float(request.args['miles'])
     #  response==miles * 63360
@@ -14,13 +14,13 @@ def render_response():
 
 
 @app.route("/page2")
-def render_response():
+def render_page2():
     mass = float(request.args['mass'])
     # response==mass * -9.8
     return render_template('page2.html')
 
 @app.route("/page3")
-def render_response():
+def render_page3():
     pe = float(request.args['pe'])
     # response==pe*441
     return render_template('page3.html')
