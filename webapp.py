@@ -26,7 +26,7 @@ def render_page3():
 @app.route("/response3")
 def render_response3():
     pe = float(request.args['pe'])
-    response==pe*441
+    response=pe*441
     return render_template('page3.html')
     return render_template('response.html', response =response)
 
